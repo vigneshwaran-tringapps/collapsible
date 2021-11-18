@@ -41,9 +41,7 @@
     position: absolute;
     right: 1rem;
   }
-  .collapsible-item-title::after {
-    content: "\2212";
-  }
+ 
   .collapsible-item-detail {
     max-height: 0;
     overflow: hidden;
