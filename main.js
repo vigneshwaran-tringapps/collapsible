@@ -1,12 +1,12 @@
 const collapsibleItemTitle = document.querySelectorAll(".collapsible-item-title");
 
-collapsibleItemTitle.forEach(collapsibleItemTitle => {
-    collapsibleItemTitle.addEventListener("click", event => {
+collapsibleItemTitle.forEach(itemTitle => {
+    itemTitle.addEventListener("click", event => {
     
    
-    collapsibleItemTitle.classList.toggle("active");
-    const collapsibleItemDetail = collapsibleItemTitle.nextElementSibling;
-    if(collapsibleItemTitle.classList.contains("active")) {
+    itemTitle.classList.toggle("active");
+    const collapsibleItemDetail = itemTitle.nextElementSibling;
+    if(itemTitle.classList.contains("active")) {
         collapsibleItemDetail.style.maxHeight = collapsibleItemDetail.scrollHeight + "px";
     }
     else {
